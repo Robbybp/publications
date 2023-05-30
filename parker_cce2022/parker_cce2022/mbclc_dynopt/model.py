@@ -1,7 +1,8 @@
 import pyomo.environ as pyo
 from pyomo.dae.flatten import flatten_dae_components
 
-from idaes.apps.caprese.categorize import (
+#from idaes.apps.caprese.categorize import (
+from parker_cce2022.common.categorize import (
     VariableCategory,
     ConstraintCategory,
 )

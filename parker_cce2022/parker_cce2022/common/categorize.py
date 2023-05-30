@@ -240,10 +240,10 @@ def categorize_dae_variables_and_constraints(
     #present_vars = [var for var in variables if var in _nlp._vardata_to_idx]
     #present_cons = [con for con in constraints if con in _nlp._condata_to_idx]
 
-    var_block_map, con_block_map = igraph.block_triangularize(
-            present_vars,
-            present_cons,
-            )
+    var_block_map, con_block_map = igraph.map_nodes_to_block_triangular_indices(
+        present_vars,
+        present_cons,
+    )
     derivdatas = []
     diff_vardatas = []
     discdatas = []

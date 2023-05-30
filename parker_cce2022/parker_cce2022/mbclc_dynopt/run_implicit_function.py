@@ -16,7 +16,8 @@ from pyomo.contrib.pynumero.algorithms.solvers.cyipopt_solver import (
     _cyipopt_status_enum,
 )
 
-from idaes.apps.caprese.categorize import (
+#from idaes.apps.caprese.categorize import (
+from parker_cce2022.common.categorize import (
     VariableCategory as VC,
     ConstraintCategory as CC,
 )
@@ -159,7 +160,7 @@ def run_dynamic_optimization(
 
             ex_model = ExternalPyomoModel(
                 ex_inputs, ex_vars, ex_resids, ex_cons,
-                use_cyipopt=use_cyipopt,
+                #use_cyipopt=use_cyipopt,
             )
             resid_scaling_factors = [
                 m.scaling_factor[var[t]] for var in diff_vars

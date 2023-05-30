@@ -42,7 +42,8 @@ from idaes.core.util.dyn_utils import (
     copy_non_time_indexed_values,
 )
 
-from idaes.apps.caprese.categorize import (
+#from idaes.apps.caprese.categorize import (
+from parker_cce2022.common.categorize import (
     categorize_dae_variables_and_constraints,
     VariableCategory,
     ConstraintCategory,
